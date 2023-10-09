@@ -1,0 +1,404 @@
+:root
+{
+    --paragraph-font-- : 'Questrial', sans-serif;
+    --header-font-- : 'Raleway', sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+main
+{
+    padding: 1.2em;
+}
+
+.header_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo
+{
+    display: flex;
+}
+
+.logo .logo_1
+{
+    width: 55px;
+    height: 50px;
+}
+
+.logo .logo_1 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.logo .logo_2
+{
+    width: 110px;
+    height: 50px;
+    margin-left: 3px;
+}
+
+.logo .logo_2 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* Menu */
+.navbar
+{
+    position: relative;
+}
+
+.navbar ul
+{
+    display: none;
+    position: absolute;
+    right: -18px;
+    top: 65px;
+    width: 125px;
+    
+}
+
+.navbar ul li
+{
+    font-size: 0.7em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.navbar ul li a
+{
+    padding: 0.4em;
+    font-family: var(--header-font--);
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+.navbar ul li a:hover
+{
+    border-bottom: 2px solid black;
+}
+
+
+.navbar div img
+{
+    padding: 1.5em;
+    width: 75px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 799px)
+{
+    .navbar:hover ul
+    {
+        display: block;
+    }
+}
+
+
+@media (min-width: 800px)
+{
+    .navbar ul
+    {
+        display: flex;
+        top: -2px;
+        right: 0;
+        width: 350px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar div img
+    {
+        display: none;
+    }
+
+    .navbar ul li a
+    {
+        padding: 1.2em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: black;
+        font-size: var(--paragraph-font--);
+        font-weight: bold;
+    }
+
+    .navbar ul li
+    {
+        margin-bottom: 0;
+    }
+}
+
+.video_chat_container h1
+{
+    font-family: var(--header-font--);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.video_chat_container>h1
+{
+    margin: 3em 0 3em 0;
+    letter-spacing: 10px;
+}
+
+.video_chat_container .video_chat
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.video_chat_container .video_chat .video
+{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1em;
+}
+
+.video_chat_container .video_chat .video iframe
+{
+    width: 100%;
+    height: 100%;
+}
+
+.video_chat .chat
+{
+    height: 500px;
+    background-color: gray;
+}
+
+.playlist_container h1, 
+.articles_container h1,
+.gallery_container h1
+{
+    font-family: var(--header-font--);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin: 2em 0 2em 0;
+}
+
+.playlist_container .playlist, 
+.articles_container .articles,
+.gallery_container .gallery  
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.playlist_container .play
+{
+    position: relative;
+}
+
+.playlist_container .play, 
+.articles_container .article
+{
+    width: 100%;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.playlist_container .play_image, 
+.articles_container .article_image,
+.gallery_container .pic
+{
+    width: 100%;
+}
+
+.playlist_container .play_image  img, 
+.articles_container .article_image img,
+.gallery_container .pic img
+{
+    width: 100%;
+}
+
+.playlist_container .play p, 
+.articles_container .article p
+{
+    font-family: var(--paragraph-font--);
+    margin: 0 0 0.2em 0;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.playlist_container .play p:nth-of-type(1), 
+.articles_container .article p:nth-of-type(1)
+{
+    font-weight: bold;
+}
+
+.playlist_container .play .youtube_icon
+{
+    position: absolute;
+    top: 26%;
+    right: 45%;
+    width: 50px;
+}
+
+.playlist_container .play .youtube_icon img
+{
+    width: 100%;
+}
+
+.footer_container
+{
+    margin-top: 10em;
+    background-color: black;
+}
+
+.footer p
+{
+    font-weight: bold;
+    font-family: var(--header-font--);
+    font-size: 1.1em;
+    color: white;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.footer_logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+
+
+@media (min-width: 600px)
+{
+    .playlist_container .playlist, 
+    .articles_container .articles,
+    .gallery_container .gallery
+    {
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 20px;
+    }
+
+    .video_chat_container .video_chat .video
+    {
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 700px)
+{
+   .header_container
+   {
+     width: 80%;
+     margin: auto;
+   }
+}
+
+
+@media (min-width: 800px)
+{
+    .video_chat_container, 
+    .playlist_container, 
+    .articles_container,
+    .gallery_container
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+    .video_chat_container .video_chat .video
+    {
+        height: 370px;
+    }
+
+}
+
+
+@media (min-width: 1000px)
+{
+    .video_chat_container, 
+    .playlist_container, 
+    .articles_container,
+    .gallery_container
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .playlist_container .playlist, 
+    .articles_container .articles,
+    .gallery_container .gallery
+    {
+        grid-template-columns: repeat(3 , 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .video_chat_container .video_chat
+    {
+        flex-direction: row;
+        /* align-items: center; */
+        grid-gap: 25px;
+    }
+
+    .video_chat_container .video_chat .video
+    {
+        flex-grow: 1;
+        height: 500px;
+    }
+
+    .video_chat .chat
+    {
+        width: 600px;
+        height: 500px;
+    }
+
+    .playlist_container .playlist, 
+    .articles_container .articles
+    {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+
+    .footer
+    {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    main
+    {
+        padding: 0;
+    }
+
+}
+
+

@@ -18,6 +18,10 @@ main
     padding: 1em;
 }
 
+.container
+{
+    position: relative;
+}
 
 .header_container
 {
@@ -424,6 +428,7 @@ main
 {
     box-shadow: 1px 10px 20px black;
     padding: 1em;
+    cursor: pointer;
 }
 
 .speakers_container .name
@@ -444,6 +449,12 @@ main
 .speakers_container .name p:nth-of-type(1)
 {
     font-weight: bold;
+    font-size: 1.2em;
+}
+
+.speakers_container .name p:nth-of-type(2)
+{
+    font-size: 0.8em;
 }
 
 
@@ -456,7 +467,8 @@ main
 
 .speakers_container .img img
 {
-    width: 80%;
+    width: 90%;
+    height: 253px;
 }
 
 .speakers_container .conference_container, 
@@ -540,8 +552,125 @@ main
 }
 
 
+/* Model Designing */
+.modal
+{
+    position: fixed;
+    z-index: 1;
+    padding: 2em;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 , 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.display
+{
+    display: flex;
+}
+
+.modal .cancel
+{
+    align-self: flex-start;
+    color: white;
+    font-size: 2em;
+    font-family: var(--header-font--);
+    cursor: pointer;
+}
+
+.modal .modal_container
+{
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal .modal_container .modal_img
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal .modal_container .modal_img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.modal 
+.modal_container 
+.modal_description 
+.modal_name
+{
+    margin: 1em 0 1em 0;
+    text-transform: uppercase;
+    font-family: var(--header-font--);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.modal 
+.modal_container 
+.modal_description 
+.modal_title
+{
+    margin: 1em 0 1em 0;
+    text-transform: uppercase;
+    font-family: var(--paragraph-font--);
+    letter-spacing: 1px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.modal 
+.modal_container 
+.modal_description
+.modal_category
+{
+    margin: 1em 0 1em 0;
+    text-transform: uppercase;
+    font-family: var(--paragraph-font--);
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.modal 
+.modal_container 
+.modal_description
+.profile
+{
+    font-family: var(--paragraph-font--);
+    letter-spacing: 1px;
+}
+
+.modal 
+.modal_container 
+.modal_description
+.profile p
+{
+    margin: 0.8em 0 0.8em 0;
+    line-height: 1.7;
+}
+
+
 @media (min-width: 500px)
 {
+
+    .modal .modal_container .modal_img img
+    {
+        width: 400px;
+    }
+
     .programme_days
     {
         width: 500px;
@@ -632,7 +761,7 @@ main
 
     .speakers_container
     {
-        width: 80%;
+        width: 60%;
         margin: 3em auto;
     }
 
@@ -667,29 +796,48 @@ main
     {
         min-height: 1200px;
     }
+
+    .speakers_container .img img
+    {
+        width: 85%;
+    }
 }
 
 
 
 @media (min-width: 1000px)
 {
+    .modal .modal_container
+    {
+        width: 100%;
+        flex-direction: row;
+        padding: 3em;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .speakers_container
+    {
+        width: 80%;
+    }
+
     .conference_container .conference
     {
-        grid-template-columns: repeat(3 , 1fr);
+        grid-template-columns: repeat(2 , 1fr);
         grid-gap: 50px;
     }
 
     .session_container .session
     {
         display: grid;
-        grid-template-columns: repeat(3 , 1fr);
+        grid-template-columns: repeat(2 , 1fr);
         grid-gap: 50px;
     }
 
     .keynote_container .keynote
     {
         display: grid;
-        grid-template-columns: repeat(3 , 1fr);
+        grid-template-columns: repeat(2 , 1fr);
         grid-gap: 50px;
     }
 
@@ -791,6 +939,17 @@ main
 
 @media (min-width: 1200px)
 {
+
+    .modal .modal_container
+    {
+        width: 90%;
+    }
+
+    .speakers_container .img img
+    {
+        width: 90%;
+    }
+
     .programme
     {
         width: 80%;
@@ -855,8 +1014,21 @@ main
         width: 150px;
         height: 60px;
         margin-left: 4px;
-    }   
+    } 
     
+    
+    .speakers_container
+    {
+        width: 85%;
+    }
+    
+    .conference_container .conference,
+    .session_container .session,
+    .keynote_container .keynote
+    {
+        grid-template-columns: repeat(3 , 1fr);
+        grid-gap: 50px;
+    }
     
     .summary_container .summary .sum
     {

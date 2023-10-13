@@ -23,6 +23,17 @@ for(let i = 0; i < availableSpeakers.length; i++)
         modal.className = "modal display";
 
     });
+
+    // availableSpeakers[i].addEventListener('mouseover' , () => {
+    //     modalImage.src = availableSpeakersImage[i].src;
+    //     name.innerText = speakers.keynotespeakers.name[i];
+    //     title.innerText = speakers.keynotespeakers.title[i];
+    //     category.innerText = speakers.keynotespeakers.category[i];
+    //     profile.innerHTML = speakers.keynotespeakers.profile[i];
+
+    //     modal.className = "modal display";
+
+    // });
 }
 
 // Programme Days JavaScript Manipulation

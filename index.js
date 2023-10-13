@@ -8,33 +8,11 @@ let title = document.querySelector('.modal_container .modal_description .modal_t
 let category = document.querySelector('.modal_container .modal_description .modal_category');
 let profile = document.querySelector('.modal_container .modal_description .profile');
 let cancel = document.querySelector('.modal .cancel');
-let modal = document.querySelector('.modal')
+let modal = document.querySelector('.modal');
+let modal_conatiner = document.querySelector('.modal_container');
 
 
-for(let i = 0; i < availableSpeakers.length; i++)
-{
-    availableSpeakers[i].addEventListener('click' , () => {
-        modalImage.src = availableSpeakersImage[i].src;
-        name.innerText = speakers.keynotespeakers.name[i];
-        title.innerText = speakers.keynotespeakers.title[i];
-        category.innerText = speakers.keynotespeakers.category[i];
-        profile.innerHTML = speakers.keynotespeakers.profile[i];
 
-        modal.className = "modal display";
-
-    });
-
-    // availableSpeakers[i].addEventListener('mouseover' , () => {
-    //     modalImage.src = availableSpeakersImage[i].src;
-    //     name.innerText = speakers.keynotespeakers.name[i];
-    //     title.innerText = speakers.keynotespeakers.title[i];
-    //     category.innerText = speakers.keynotespeakers.category[i];
-    //     profile.innerHTML = speakers.keynotespeakers.profile[i];
-
-    //     modal.className = "modal display";
-
-    // });
-}
 
 // Programme Days JavaScript Manipulation
 
@@ -153,8 +131,47 @@ let removeActive = () => {
 
 
 
+
+for(let i = 0; i < availableSpeakers.length; i++)
+{
+    availableSpeakers[i].addEventListener('click' , () => {
+        modalImage.src = availableSpeakersImage[i].src;
+        name.innerText = speakers.keynotespeakers.name[i];
+        title.innerText = speakers.keynotespeakers.title[i];
+        category.innerText = speakers.keynotespeakers.category[i];
+        profile.innerHTML = speakers.keynotespeakers.profile[i];
+
+        modal.className = "modal display";
+
+    });
+
+    availableSpeakersImage[i].addEventListener('mouseenter' , (e) => {
+
+        
+        modalImage.src = availableSpeakersImage[i].src;
+        name.innerText = speakers.keynotespeakers.name[i];
+        title.innerText = speakers.keynotespeakers.title[i];
+        category.innerText = speakers.keynotespeakers.category[i];
+        profile.innerHTML = speakers.keynotespeakers.profile[i];
+
+        modal.className = "modal display";
+
+    });
+
+}
+
+
 // Speakers Section JavaScript...
 cancel.addEventListener('click' , ()=>{
+    modal.className = "modal";
+});
+
+modal_conatiner.addEventListener('mouseenter' , ()=>{
+    modal.className = "modal display";
+});
+
+
+modal_conatiner.addEventListener('mouseleave' , ()=>{
     modal.className = "modal";
 });
 

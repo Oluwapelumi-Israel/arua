@@ -181,11 +181,12 @@ main
 
 .newyear
 {
-    font-size: 8em;
+    font-size: 1.2em;
+    margin-top: 1em;
     font-weight: 500;
-    color: #fff;
+    font-family: var(--header-font--);
+    color: black;
     text-align: center;
-    line-height: 0.6em;
     display: none;
 }
 

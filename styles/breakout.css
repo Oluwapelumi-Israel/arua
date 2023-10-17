@@ -162,6 +162,16 @@ main
     margin-top: 2em;
 }
 
+.breakout_container .poster
+{
+    margin: 5em 0 8em 0;
+}
+
+.breakout_container .poster a
+{
+    letter-spacing: 1px;
+}
+
 .breakout_container a
 {
     text-decoration: none;
@@ -170,6 +180,7 @@ main
     background-color: blue;
     padding: 0.9em;
     border-radius: 10px;
+    font-family: var(--header-font--);
 }
 
 .breakout_container a:hover

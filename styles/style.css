@@ -432,6 +432,19 @@ main
     cursor: pointer;
 }
 
+.speakers_container .speaks .read_more
+{
+   margin: 1.5em 0 0 0; 
+}
+
+.speakers_container .speaks .read_more p 
+{
+    font-family: var(--header-font--);
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .speakers_container .name
 {
     display: flex;

@@ -153,6 +153,7 @@ main
     letter-spacing: 10px;
     font-size: 1.5em;
     text-align: center;
+    margin-top: 2em;
 }
 
 
@@ -162,15 +163,6 @@ main
     margin-top: 2em;
 }
 
-.breakout_container .poster
-{
-    margin: 5em 0 8em 0;
-}
-
-.breakout_container .poster a
-{
-    letter-spacing: 1px;
-}
 
 .breakout_container a
 {
@@ -189,10 +181,6 @@ main
     background-color: rgb(225,225,225);
 }
 
-.breakout_container .session_head
-{
-    display: none;
-}
 
 .breakout_container .session_days
 {
@@ -220,72 +208,51 @@ main
     background-color: rgb(225,225,225);
 }
 
-.breakout_container .sessions
-{
-    margin: 2em 0 2em 0;
-}
 
-.breakout_container .sessions.visible
+.breakout_container .breakout_for_desktop
 {
     display: none;
 }
 
-.breakout_container .sessions h1
+.breakout_for_mobile .min_table
+{
+    margin-bottom: 2em;
+}
+
+.breakout_for_mobile .min_table h1
 {
     font-family: var(--header-font--);
-    font-style: bold;
-    letter-spacing: 2px;
-    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 3em 0 2em 0;
 }
 
-
-.breakout_container 
-.breakoutsession 
-.zoom
+.breakout_for_mobile .programme
 {
-    margin: 1em 0 4em 0;
+    margin-bottom: 2em;
 }
 
-.breakout_container 
-.breakoutsession 
-.zoom b
+.breakout_for_mobile .programme section
 {
-    margin-right: .3em;
-    font-size: 0.9em;
+    margin-bottom: 4em;
 }
 
-
-.breakout_container 
-.breakoutsession 
-.zoom>p
+.breakout_for_mobile .programme section p 
 {
     margin-bottom: 1em;
     font-family: var(--header-font--);
 }
 
-.breakout_container 
-.breakoutsession 
-.zoom>p:nth-of-type(3)
+.breakout_for_mobile .programme section p:nth-of-type(1)
 {
-    margin-top: 1em;
+    font-weight: bold;
 }
 
-.breakout_container 
-.breakoutsession 
-.zoom .theme h1
+.breakout_for_mobile .programme section p:nth-of-type(5)
 {
-    font-size: 0.9em;
+    margin-top: 2em;
 }
-
-.breakout_container 
-.breakoutsession 
-.zoom .theme p
-{
-    font-size: 1em;
-    font-family: var(--paragraph-font--);
-    margin-top: 0.2em;
-}
-
 
 .footer_container
 {
@@ -317,11 +284,27 @@ main
     margin-top: 1em;
 }
 
+.visible
+{
+    display: none;
+}
+
+
 
 
 
 @media (min-width: 800px)
 {
+    .breakout_container .breakout_for_desktop
+    {
+        display: block;
+    }
+
+    .breakout_container .breakout_for_mobile
+    {
+        display: none;
+    }
+
     .breakout_container,
     .header_container
     {
@@ -393,6 +376,70 @@ main
     {
         margin-top: 1em;
     }
+
+    .breakout_for_desktop
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .breakout_for_desktop .table_container
+    {
+        width: 100%;
+    }
+
+    .breakout_for_desktop .table_container table
+    {
+        width: 100%;
+        border-spacing: 0 20px;
+    }
+
+    .breakout_for_desktop .table_container .table h1
+    {
+        font-family: var(--header-font--);
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .breakout_for_desktop .table_container table tr
+    {
+        vertical-align: top;
+    }
+
+    .breakout_for_desktop .table_container table th,
+    .breakout_for_desktop .table_container table td
+    {
+        text-align: left;
+    }
+
+    .breakout_for_desktop .table_container table th
+    {
+        font-family: var(--header-font--);
+        font-weight: bold;
+    }
+
+    .breakout_for_desktop .table_container table td
+    {
+        font-family: var(--header-font--);
+    }
+
+    .breakout_for_desktop .table_container table td.theme p 
+    {
+        margin-bottom: 1em;
+    }
+
+    .breakout_for_desktop 
+    .table_container table td.theme p:nth-of-type(1)
+    {
+        font-weight: bold;
+    }
+
+    .breakout_for_desktop .table_container table .long
+    {
+        width: 300px;
+    }
 }
 
 
@@ -418,17 +465,24 @@ main
     {
         flex-basis: 550px;
     }
+
+    .breakout_for_desktop
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .breakout_for_desktop .table_container table .long
+    {
+        width: 400px;
+    }
 }
 
 
 @media (min-width: 1200px)
 {
-    .breakout_container,
-    .header_container
-    {
-        width: 80%;
-    }
-
+    
     .breakout_container 
     .breakoutsession 
     .zoom .theme,
@@ -456,11 +510,29 @@ main
     {
         padding: 0;
     }
+
+    .breakout_for_desktop
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .breakout_for_desktop .table_container table .long
+    {
+        width: 600px;
+    }
 }
 
 
 @media (min-width: 1400px)
 {
+
+    .breakout_container,
+    .header_container
+    {
+        width: 80%;
+    }
+
     .breakout_container 
     .breakoutsession 
     .zoom .theme,

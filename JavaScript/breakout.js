@@ -1,6 +1,9 @@
 let sessionOne = document.querySelector('#session_1');
+let sessionOneMobile = document.querySelector('#tab1');
 let sessionTwo = document.querySelector('#session_2');
+let sessionTwoMobile = document.querySelector('#tab2');
 let sessionThree = document.querySelector('#session_3');
+let sessionThreeMobile = document.querySelector('#tab3');
 
 let sessionDayOne = document.querySelector('#day_1');
 let sessionDayTwo = document.querySelector('#day_2');
@@ -12,7 +15,8 @@ sessionDayOne.addEventListener('click' , ()=>{
     removeActive();
 
     sessionDayOne.className = "days active";
-    sessionOne.className = "sessions";
+    sessionOne.className = "table_container";
+    sessionOneMobile.className = "min_table";
 });
 
 sessionDayTwo.addEventListener('click' , ()=>{
@@ -20,7 +24,8 @@ sessionDayTwo.addEventListener('click' , ()=>{
     removeActive();
 
     sessionDayTwo.className = "days active";
-    sessionTwo.className = "sessions";
+    sessionTwo.className = "table_container";
+    sessionTwoMobile.className = "min_table";
 });
 
 sessionDayThree.addEventListener('click' , ()=>{
@@ -28,7 +33,8 @@ sessionDayThree.addEventListener('click' , ()=>{
     removeActive();
 
     sessionDayThree.className = "days active";
-    sessionThree.className = "sessions";
+    sessionThree.className = "table_container";
+    sessionThreeMobile.className = "min_table";
 });
 
 
@@ -36,9 +42,13 @@ sessionDayThree.addEventListener('click' , ()=>{
 
 function removeVisibility()
 {
-    sessionOne.className = "sessions visible";
-    sessionTwo.className = "sessions visible";
-    sessionThree.className = "sessions visible";
+    sessionOne.className = "table_container visible";
+    sessionTwo.className = "table_container visible";
+    sessionThree.className = "table_container visible";
+
+    sessionOneMobile.className = "min_table visible";
+    sessionTwoMobile.className = "min_table visible";
+    sessionThreeMobile.className = "min_table visible";
 }
 
 

@@ -145,18 +145,18 @@ for(let i = 0; i < availableSpeakers.length; i++)
 
     });
 
-    availableSpeakersImage[i].addEventListener('mouseenter' , (e) => {
+    // availableSpeakersImage[i].addEventListener('mouseenter' , (e) => {
 
         
-        modalImage.src = availableSpeakersImage[i].src;
-        name.innerText = speakers.keynotespeakers.name[i];
-        title.innerText = speakers.keynotespeakers.title[i];
-        category.innerText = speakers.keynotespeakers.category[i];
-        profile.innerHTML = speakers.keynotespeakers.profile[i];
+    //     modalImage.src = availableSpeakersImage[i].src;
+    //     name.innerText = speakers.keynotespeakers.name[i];
+    //     title.innerText = speakers.keynotespeakers.title[i];
+    //     category.innerText = speakers.keynotespeakers.category[i];
+    //     profile.innerHTML = speakers.keynotespeakers.profile[i];
 
-        modal.className = "modal display";
+    //     modal.className = "modal display";
 
-    });
+    // });
 
 }
 
@@ -166,14 +166,14 @@ cancel.addEventListener('click' , ()=>{
     modal.className = "modal";
 });
 
-modal_conatiner.addEventListener('mouseenter' , ()=>{
-    modal.className = "modal display";
-});
+// modal_conatiner.addEventListener('mouseenter' , ()=>{
+//     modal.className = "modal display";
+// });
 
 
-modal_conatiner.addEventListener('mouseleave' , ()=>{
-    modal.className = "modal";
-});
+// modal_conatiner.addEventListener('mouseleave' , ()=>{
+//     modal.className = "modal";
+// });
 
 
 

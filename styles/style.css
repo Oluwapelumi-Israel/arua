@@ -122,7 +122,7 @@ main
         display: flex;
         top: -2px;
         right: 0;
-        width: 350px;
+        width: 550px;
         justify-content: flex-end;
         align-items: center;
     }
@@ -434,7 +434,7 @@ main
 
 .speakers_container .speaks .read_more
 {
-   margin: 1.5em 0 0 0; 
+   margin: 1em 0 0 0; 
 }
 
 .speakers_container .speaks .read_more p 
@@ -726,6 +726,11 @@ main
         margin: 3em auto;
     }
 
+    .speakers_container .img img
+    {
+        width: 95%;
+    }
+
     .programme .programme_flyer 
     {
         width: 100%;
@@ -777,7 +782,7 @@ main
 
     .speakers_container
     {
-        width: 60%;
+        width: 45%;
         margin: 3em auto;
     }
 
@@ -815,7 +820,7 @@ main
 
     .speakers_container .img img
     {
-        width: 85%;
+        width: 90%;
     }
 }
 
@@ -840,21 +845,26 @@ main
     .conference_container .conference
     {
         grid-template-columns: repeat(2 , 1fr);
-        grid-gap: 50px;
+        grid-gap: 120px;
     }
 
     .session_container .session
     {
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
-        grid-gap: 50px;
+        grid-gap: 120px;
     }
 
     .keynote_container .keynote
     {
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
-        grid-gap: 50px;
+        grid-gap: 120px;
+    }
+
+    .speakers_container .img img
+    {
+        width: 95%;
     }
 
 
@@ -963,7 +973,7 @@ main
 
     .speakers_container .img img
     {
-        width: 90%;
+        width: 100%;
     }
 
     .programme
@@ -1035,7 +1045,7 @@ main
     
     .speakers_container
     {
-        width: 85%;
+        width: 80%;
     }
     
     .conference_container .conference,
@@ -1043,7 +1053,8 @@ main
     .keynote_container .keynote
     {
         grid-template-columns: repeat(3 , 1fr);
-        grid-gap: 50px;
+        grid-gap: 100px;
+        
     }
     
     .summary_container .summary .sum

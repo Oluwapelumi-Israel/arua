@@ -175,6 +175,26 @@ main
     margin-bottom: 1em;
 }
 
+.video_chat_container .video_chat .video p
+{
+    width: 360px;
+    margin-bottom: 1em;
+    background-color: blue;
+    font-family: var(--header-font--);
+    padding: 1em;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.video_chat_container .video_chat .video p:hover
+{
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
 .video_chat_container .video_chat .video iframe
 {
     width: 100%;
@@ -185,6 +205,11 @@ main
 {
     height: 500px;
     background-color: gray;
+}
+
+.playlist_container
+{
+    margin-top: 4em;
 }
 
 .playlist_container h1, 
@@ -340,6 +365,11 @@ main
 
 @media (min-width: 600px)
 {
+    .playlist_container
+    {
+        margin-top: 7em;
+    }
+
     .playlist_container .playlist 
     /* .articles_container .articles,
     .gallery_container .gallery */
@@ -388,6 +418,12 @@ main
      width: 80%;
      margin: auto;
    }
+
+   .playlist_container
+    {
+        margin-top: 5em;
+    }
+
 }
 
 
@@ -406,6 +442,12 @@ main
     {
         height: 370px;
     }
+
+    .playlist_container
+    {
+        margin-top: 5em;
+    }
+
 
 }
 
@@ -454,6 +496,12 @@ main
     {
         grid-column: 1/4;
     }
+
+    .playlist_container
+    {
+        margin-top: 5em;
+    }
+
 }
 
 @media (min-width: 1200px)
@@ -495,6 +543,12 @@ main
     {
         padding: 0;
     }
+
+    .playlist_container
+    {
+        margin-top: 5em;
+    }
+
 
 }
 

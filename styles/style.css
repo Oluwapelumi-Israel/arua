@@ -34,6 +34,7 @@ main
 .logo
 {
     display: flex;
+    align-items: center;
 }
 
 .logo .logo_1
@@ -238,6 +239,21 @@ main
 {
   width: 100%;
   margin-bottom: 2em;
+}
+
+.programme .programme_flyer .arua h2
+{
+    font-family: var(--header-font--);
+    font-size: 1.3em;
+    margin-bottom: 2em;
+    letter-spacing: 2px;
+}
+
+.programme .programme_flyer .arua section img 
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
 }
 
 .programme .programme_flyer img
@@ -678,6 +694,39 @@ main
     line-height: 1.7;
 }
 
+.timer
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.timer p
+{
+    margin-right: 1em;
+    text-transform: uppercase;
+    font-family: var(--header-font--);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.news h2
+{
+    font-family: var(--header-font--);
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.news p
+{
+    font-family: var(--paragraph-font--);
+    letter-spacing: 1px; 
+    line-height: 1.7;
+}
+
 
 @media (min-width: 500px)
 {
@@ -982,6 +1031,7 @@ main
         margin: 3em auto;
         min-height: 600px;
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .summary_container 
@@ -1002,11 +1052,13 @@ main
 
     .programme .programme_flyer 
     {
-        width: 800px;
-        height: 600px;
+        width: 900px;
+        height: 700px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        flex-direction: column;
+        gap: 100px;
     }
 
     .programme .programme_flyer img 
@@ -1082,6 +1134,8 @@ main
     {
         padding: 0;
     }
+
+    
 
 }
 

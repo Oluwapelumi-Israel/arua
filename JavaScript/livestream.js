@@ -1,11 +1,12 @@
 let play = document.querySelectorAll('.play');
 let iframe = document.querySelector('iframe');
+let click = document.querySelector('clickings');
 
 let arr = [
-    "https://www.youtube.com/embed/phK1Hf3ZF2w?si=iejSAqudZT6fc19x",
-    "https://www.youtube.com/embed/vp2hLju39QM?si=BXZnUUEkwhAMc8T9",
-    "https://www.youtube.com/embed/4IN7R_QOdzI?si=cbmxlSIgARromWDd",
-    "https://www.youtube.com/embed/kLCSOaVvMEY?si=25EWNFCZNE1sdpZX"
+    "https://www.youtube.com/embed/GiEGS8rzzEA?si=fN8kemYiTACHbfnW",
+    "https://www.youtube.com/embed/JN7F2p7Hz7c?si=tZLNrZGVnTFqK6YX",
+    "https://www.youtube.com/embed/si9iOi90Glc?si=9m36fHYTpD9HSU5Q",
+    "https://www.youtube.com/embed/Nls0sXp1BDw?si=l9jr7UkW3bkaml2y"
 
 ];
 
@@ -15,3 +16,7 @@ for (const key in play)
         iframe.src = arr[key];
     });
 }
+
+click.addEventListener('click', ()=>{
+    iframe.src = "https://www.youtube.com/embed/kpausxTGHys?si=teeczh1OtOjFiO4F";
+});

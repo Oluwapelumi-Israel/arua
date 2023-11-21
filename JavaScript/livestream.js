@@ -6,7 +6,8 @@ let arr = [
     "https://www.youtube.com/embed/GiEGS8rzzEA?si=fN8kemYiTACHbfnW",
     "https://www.youtube.com/embed/JN7F2p7Hz7c?si=tZLNrZGVnTFqK6YX",
     "https://www.youtube.com/embed/si9iOi90Glc?si=9m36fHYTpD9HSU5Q",
-    "https://www.youtube.com/embed/Nls0sXp1BDw?si=l9jr7UkW3bkaml2y"
+    "https://www.youtube.com/embed/Nls0sXp1BDw?si=l9jr7UkW3bkaml2y",
+    "https://www.youtube.com/embed/hLGJw3GH9uU?si=Z-tlYfrvd6UONFZ8"
 
 ];
 

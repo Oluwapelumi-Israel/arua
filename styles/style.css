@@ -241,6 +241,11 @@ main
   margin-bottom: 2em;
 }
 
+.programme .programme_flyer section
+{
+    margin-bottom: 2em;
+}
+
 .programme .programme_flyer .arua h2
 {
     font-family: var(--header-font--);
@@ -711,7 +716,12 @@ main
     letter-spacing: 1px;
 }
 
-.news h2
+.link
+{
+    width: 100%;
+}
+
+.news h2, .link h2
 {
     font-family: var(--header-font--);
     font-size: 1.2em;
@@ -720,11 +730,17 @@ main
     text-transform: uppercase;
 }
 
-.news p
+
+.news p, .link p
 {
     font-family: var(--paragraph-font--);
     letter-spacing: 1px; 
     line-height: 1.7;
+}
+
+.link p a
+{
+    margin-left: 1em;
 }
 
 
@@ -1050,6 +1066,11 @@ main
         margin-left: 2em;
     }
 
+    .programme .programme_flyer section
+    {
+        margin-bottom: 0;
+    }
+
     .programme .programme_flyer 
     {
         width: 900px;
@@ -1058,12 +1079,12 @@ main
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        gap: 100px;
+        gap: 70px;
     }
 
     .programme .programme_flyer img 
     {
-        width: 100%;
+        width: 65%;
     }
 
     .programme_days

@@ -1079,7 +1079,7 @@ main
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        gap: 70px;
+        gap: 35px;
     }
 
     .programme .programme_flyer img 
